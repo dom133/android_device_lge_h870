@@ -25,7 +25,7 @@ $(call inherit-product, vendor/aosp/common.mk)
 $(call inherit-product, device/lge/h870/device.mk)
 
 # Boot animation res
-TARGET_BOOT_ANIMATION_RES := 2140
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870
