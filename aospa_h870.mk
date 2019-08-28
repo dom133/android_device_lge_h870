@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Check for target product
+ifeq (pa_h870,$(TARGET_PRODUCT))
+
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
@@ -44,3 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="lucye_global_com-user 8.0.0 OPR1.170623.032 190811238daf5 release-keys"
 
 BUILD_FINGERPRINT := "lge/lucye_global_com/lucye:8.0.0/OPR1.170623.032/190811238daf5:user/release-keys"
+
+endif
