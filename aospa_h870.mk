@@ -18,18 +18,21 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common AEX stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Include Paranoid Android common configuration
+TARGET_BOOT_ANIMATION_RES := 1440
+
+TARGET_USES_AOSP := false
+TARGET_USES_QCOM_BSP := false
+
+include device/qcom/common/common.mk
+include vendor/pa/main.mk
 
 # Inherit from h870 device
 $(call inherit-product, device/lge/h870/device.mk)
 
-# Boot animation res
-TARGET_BOOT_ANIMATION_RES := 1440
-
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870
-PRODUCT_NAME := aosp_h870
+PRODUCT_NAME := pa_h870
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-H870
 PRODUCT_MANUFACTURER := LGE
