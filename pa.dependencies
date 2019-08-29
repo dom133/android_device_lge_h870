@@ -1,5 +1,23 @@
 [
     {
+        "remote":       "github",
+        "repository":   "LineageOS/android_hardware_broadcom_libbt",
+        "target_path":  "hardware/broadcom/libbt",
+        "revision":     "lineage-16.0"
+    },
+    {
+        "remote":       "github",
+        "repository":   "LineageOS/android_hardware_broadcom_wlan",
+        "target_path":  "hardware/broadcom/wlan",
+        "revision":     "lineage-16.0"
+    },
+    {
+        "remote":       "github",
+        "repository":   "LineageOS/android_hardware_broadcom_nfc",
+        "target_path":  "hardware/broadcom/nfc",
+        "revision":     "lineage-16.0"
+    },
+    {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
