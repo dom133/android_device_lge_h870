@@ -1,11 +1,5 @@
 [
     {
-        "remote":       "blobs",
-        "repository":   "proprietary_vendor_qcom_common",
-        "target_path":  "vendor/qcom/common",
-        "revision":     "pie"
-    },
-    {
         "remote":       "aospa",
         "repository":   "AOSPA/android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
