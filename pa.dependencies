@@ -18,10 +18,10 @@
         "revision":     "lineage-16.0"
     },
     {
-        "remote":       "aospa",
-        "repository":   "AOSPA/android_hardware_qcom_audio",
+        "remote":       "github",
+        "repository":   "LineageOS/android_hardware_qcom_audio",
         "target_path":  "hardware/qcom/audio",
-        "revision":     "pie-8996"
+        "revision":     "lineage-16.0-caf-8996"
     },
     {
         "remote":       "aospa",
