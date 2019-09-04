@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuild kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/h870/kernel
+    LOCAL_KERNEL := device/lge/h870/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
