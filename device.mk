@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # Prebuild kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-    LOCAL_KERNEL := device/h870/zImage
+    LOCAL_KERNEL := device/h870/Image.lz4-dtb
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
