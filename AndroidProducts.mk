@@ -15,3 +15,7 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_h870.mk
+
+COMMON_LUNCH_CHOICES := \
+	aosp_h870-userdebug \
+	aosp_h870-eng
