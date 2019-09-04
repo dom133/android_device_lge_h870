@@ -37,6 +37,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd.cal
 
 # Prebuild kernel
-TARGET_PREBUILT_KERNEL := device/h870/zImage
-PRODUCT_COPY_FILES += \
-	$(TARGET_PREBUILT_KERNEL):kernel
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    LOCAL_KERNEL := device/h870/zImage
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
