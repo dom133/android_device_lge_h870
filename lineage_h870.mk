@@ -23,6 +23,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from h870 device
 $(call inherit-product, device/lge/h870/device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870
