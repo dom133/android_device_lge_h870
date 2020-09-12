@@ -21,9 +21,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 # Inherit from h870 device
 $(call inherit-product, device/lge/h870/device.mk)
 
-# Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # Boot animation res
 TARGET_BOOT_ANIMATION_RES := 1440
 
