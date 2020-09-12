@@ -22,6 +22,12 @@ $(call inherit-product-if-exists, vendor/lge/h870/h870-vendor.mk)
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
+# common msm8996
+# Overlays (inherit after vendor/cm to ensure we override it)
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
+$(call inherit-product, device/lge/msm8996-common/msm8996.mk)
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_lucye_global_com.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_variable.conf
